@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.active {
+    display: block;
+}
+
+html {
+    font-family: Edgeflix Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+body {
+    background-color: #141414;
+}
+
+.header-main {
+    width: 1824px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.header-main nav {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.navigation-menu {
+    display: flex;
+    gap: 50px;
+}
+
+.navigation-menu ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 14px;
+}
+
+.navigation-menu ul li {
+    list-style: none;
+}
+
+.navigation-menu ul li a:hover {
+    color: rgb(150, 150, 150);
+    transition: 0.18s;
+}
+
+.navigation-menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo img {
+    height: 64px;
+}
+
+.logo h1 {
+    color: #e50914;
+    font-family: Bebas Neue;
+    font-size: 32px;
+    letter-spacing: 5px;
+}
+
+.user-menu {
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 30px;
+}
+
+.user-menu button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    width: 30px;
+}
+
+.user-menu .search-bar {
+    opacity: 0;
+    padding: 6px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.user-profile {
+    display: flex;
+    gap: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.user-profile i {
+    font-size: 20px;
+}
+
+.username {
+    font-size: 18px;
+}
+
+.user-profile p {
+    font-size: 18px;
+}
+
+.favorite-film {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 20px;
+}
+
+.film-text {
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.film-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 30px;
+}
+
+.film-card img {
+    height: 450px;
+    background-color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    -webkit-transition: 0.45s;
+}
+
+.film-card img:hover {
+    opacity: 0.7;
+    transform: scale(1.1);
+    transition: 0.45s; 
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0,0.9);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    display: none;
+    z-index: 1;
+}
+
+.active {
+    display: flex;
+    opacity: 1;
+}
+
+.info-section {
+    display: flex;
+    background: #141414;
+    height: 850px;
+    width: 1600px;
+    border-radius: 10px;
+}
+
+.info {   
+    padding: 30px;
+}
+
+.info img {
+    width: 450px;
+    border-radius: 20px;
+}
+
+.info h1 {
+    font-size: 40px;
+    padding: 20px 0;
+    color: white;
+}
+
+.info h2 {
+    font-size: 27px;
+    color: white;
+    font-weight: 400;
+}
+
+.overview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.info-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.info-btn .add-fav {
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: transparent;
+    margin-top: 50px;
+    font-size: 20px;
+    color: white;
+    /* opacity: 0; */
+}
+
+.info-btn .close-btn {
+    font-size: 35px;
+    background-color: transparent;
+    font-weight: bold;
+    border: none;
+    color: red;
+    margin-top: 50px;
+}
+
+.overview iframe {
+    margin-bottom: 50px;
+}
+
+.footer-main {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.social {
+    padding: 20px 0;
+}
+
+.social i {
+    color: white;
+    cursor: pointer;
+    opacity: 0.8;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.footer-content {
+    display: flex;
+    gap: 100px;
+}
+
+.footer-content ul li {
+    list-style-type: none;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.footer-content ul li a {
+    color: rgb(150, 150, 150);
+    text-decoration: none;
+}
+
+.footer-content ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-service-btn {
+    padding: 20px 0;
+}
+
+.footer-service-btn button {
+    background-color: transparent;
+    color: rgb(150, 150, 150);
+    padding: 5px;
+    border: 1px solid rgb(150, 150, 150);
+    cursor: pointer;
+}
